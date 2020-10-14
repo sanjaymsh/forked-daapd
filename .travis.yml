@@ -7,7 +7,9 @@ dist: xenial
 
 services:
   - docker
-
+arch:
+  - amd64
+  - ppc64le
 env:
   matrix:
     - SH="docker exec -t ubuntu-lts bash -c" CFG=""
